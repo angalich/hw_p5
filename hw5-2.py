@@ -1,0 +1,16 @@
+my_file = open('text2.txt', 'r', encoding='utf-8')
+content = my_file.read()
+print(f'File content: \n {content}')
+my_file = open('text2.txt', 'r', encoding='utf-8')
+content = my_file.readlines()
+print(f'Lines:  {len(content)}')
+my_file = open('text2.txt', 'r', encoding='utf-8')
+content = my_file.readlines()
+for i in range(len(content)):
+    print(f'Characters: {i + 1} - string: {len(content[i])}')
+my_file = open('text2.txt', 'r', encoding='utf-8')
+content = my_file.read()
+content = content.split()
+print(f'Words:  {len(content)}')
+my_file.close()
+#+
